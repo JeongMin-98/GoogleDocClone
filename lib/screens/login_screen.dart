@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/'
+import 'package:google_doc_clone/colors.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -13,7 +15,16 @@ class LoginScreen extends StatelessWidget {
             'assets/images/g-logo-2.png',
             height: 20,
           ),
-          label: const Text('Sign in with Google'),
+          label: const Text(
+            'Sign in with Google',
+            style: TextStyle(
+              color: kBlackColor,
+            ),
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kWhiteColor,
+            minimumSize: const Size(150, 50),
+          ),
         ),
       ),
     );
