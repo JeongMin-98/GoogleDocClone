@@ -2,3 +2,7 @@
 .flutter-plugins-dependencies
 package-lock.json
 package.json
+
+.dart_tool/
+build/
+.idea
